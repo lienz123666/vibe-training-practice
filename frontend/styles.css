@@ -1,0 +1,40 @@
+body {
+    font-family: system-ui, sans-serif;
+    margin: 0;
+    background: #f6f7f9;
+}
+
+.container {
+    max-width: 760px;
+    margin: 40px auto;
+    padding: 24px;
+    background: white;
+    border-radius: 12px;
+}
+
+form {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+input,
+textarea,
+button {
+    font: inherit;
+    padding: 10px 12px;
+}
+
+.task-item {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.task-done .task-title {
+    text-decoration: line-through;
+    opacity: 0.6;
+}

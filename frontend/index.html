@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <main class="container">
+    <h1>Task Manager</h1>
+
+    
+    <form id="task-form">
+        <input id="title" placeholder="任务标题" required />
+        <textarea id="description" placeholder="任务描述"></textarea>
+        <button type="submit">新增任务</button>
+    </form>
+    <select id="status-filter">
+    <option value="all">全部</option>
+    <option value="pending">未完成</option>
+    <option value="completed">已完成</option>
+    </select>
+
+
+    <p id="message"></p>
+    <p id="stats"></p>
+    <ul id="task-list"></ul>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
